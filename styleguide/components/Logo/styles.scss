@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  svg {
+    width: 50vw;
+
+    path {
+      fill: #254;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.textFieldBase {
+	background: transparent;
+	border: 0;
+	border-bottom: 3px solid $baseColor;
+	box-sizing: border-box;
+	color: $baseColor;
+	display: block;
+	font-size: $baseSize;
+	margin-bottom: 2rem;
+	outline: 0;
+	padding: 0.5rem 0;
+	width: 380px;
+	@media screen and (min-width: 1200px)  {
+      font-size: 1.1em;
+    }
+}

@@ -1,0 +1,74 @@
+form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	@media screen and (min-width: 1200px)  {
+		width: auto;
+	}
+	.radioContainer, .checkboxContainer {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		@media screen and (min-width: 1200px)  {
+			flex-direction: row;
+		}
+	}
+	.checkboxContainer {
+		label.textBase.checkboxLabel {
+			margin: 2.5rem 0 1.5rem 0;
+			@media screen and (min-width: 1200px)  {
+				margin: 3.5rem 2.5rem 2.5rem 2.5rem;
+			}
+		}
+	}
+	.radioContainer {
+		margin: 1rem 0;
+		width: 100%;
+		@media screen and (min-width: 1200px)  {
+			margin: 2rem 0;
+			width: auto;
+		}
+		div {
+			label.textBase.radioLabel {
+		    	margin-bottom: 10px;
+		    	width: 85vw;
+		    	@media sreen and (min-width: 768px) {
+		    		width: 60vw;
+		    	}
+		    	@media screen and (min-width: 1200px)  {
+					border-right: 1px solid $baseColor;
+					flex-direction: row;
+					margin-bottom: 0;
+					width: 140px;
+				}
+		    }
+		}
+		div:last-of-type {
+			label.textBase.radioLabel {
+				border-right: 3px solid $baseColor;
+			}
+		}
+	}
+	.inputContainer {
+		text-align: center;
+		width: 85vw;
+		@media sreen and (min-width: 768px) {
+    		width: 60vw;
+    	}
+		@media screen and (min-width: 1200px)  {
+			width: 100%;
+		}
+		p.textBase.textBold {
+			display: inline-block;
+		}
+	}
+	.textFieldBase {
+		margin-bottom: 1.5rem;
+		width: 100%;
+		@media screen and (min-width: 1200px)  {
+			margin-bottom: 2.5rem;
+		}
+	}
+}

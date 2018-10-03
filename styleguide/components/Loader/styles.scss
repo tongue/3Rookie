@@ -1,0 +1,40 @@
+.loaderBase {
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+.loaderBase:before, .loaderBase:after {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  border: 5px solid transparent;
+  border-top-color: $softbeige;
+  transform: translate(-50%);
+}
+.loaderBase:before {
+  content: "";
+  z-index: 100;
+  animation: spin 1s infinite;
+}
+.loaderBase:after {
+  border: 5px solid transparent;
+  color: $baseColor;
+  content: "Loading";
+  font-family: $baseFont;
+  font-size: 0.8em;
+  font-weight: $bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0%);
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
